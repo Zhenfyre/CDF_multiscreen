@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -12,25 +14,54 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
 
-    public void openCollection (View view) {
-        Intent i = new Intent(this, CollectionActivity.class);
-        startActivity(i);
-    }
+        TextView collectionView = (TextView) findViewById(R.id.collection);
+        collectionView.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the collection category is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link CollectionActivity}
+                Intent collectionIntent = new Intent(MainActivity.this, CollectionActivity.class);
+                // Start the new activity
+                startActivity(collectionIntent);
+            }
+        });
 
-    public void openAesthetics (View view) {
-        Intent i = new Intent(this, AestheticsActivity.class);
-        startActivity(i);
-    }
+        TextView aestheticsView = (TextView) findViewById(R.id.aesthetics);
+        aestheticsView.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the aesthetics category is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link AestheticsActivity}
+                Intent aestheticsIntent = new Intent(MainActivity.this, AestheticsActivity.class);
+                // Start the new activity
+                startActivity(aestheticsIntent);
+            }
+        });
 
-    public void openBacteria (View view) {
-        Intent i = new Intent(this, BacteriaActivity.class);
-        startActivity(i);
-    }
+        TextView bacteriaView = (TextView) findViewById(R.id.bacteria);
+        bacteriaView.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the bacteria category is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link BacteriaActivity}
+                Intent bacteriaIntent = new Intent(MainActivity.this, BacteriaActivity.class);
+                // Start the new activity
+                startActivity(bacteriaIntent);
+            }
+        });
 
-    public void openTestStrips (View view) {
-        Intent i = new Intent(this, TestStripsActivity.class);
-        startActivity(i);
+        TextView testStripsView = (TextView) findViewById(R.id.testStrips);
+        testStripsView.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the test strips category is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link TestStripsActivity}
+                Intent testStripsIntent = new Intent(MainActivity.this, TestStripsActivity.class);
+                // Start the new activity
+                startActivity(testStripsIntent);
+            }
+        });
+
     }
 }

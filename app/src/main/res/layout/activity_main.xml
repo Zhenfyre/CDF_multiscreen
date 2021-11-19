@@ -12,28 +12,24 @@
         android:id="@+id/collection"
         style="@style/CategoryStyle"
         android:background="@color/category_collection"
-        android:text="@string/category_collection"
-        android:onClick="openCollection"/>
+        android:text="@string/category_collection"/>
 
     <TextView
         android:id="@+id/aesthetics"
         style="@style/CategoryStyle"
         android:background="@color/category_aesthetics"
-        android:text="@string/category_aesthetics"
-        android:onClick="openAesthetics"/>
+        android:text="@string/category_aesthetics"/>
 
     <TextView
         android:id="@+id/bacteria"
         style="@style/CategoryStyle"
         android:background="@color/category_bacteria"
-        android:text="@string/category_bacteria"
-        android:onClick="openBacteria"/>
+        android:text="@string/category_bacteria"/>
 
     <TextView
         android:id="@+id/testStrips"
         style="@style/CategoryStyle"
         android:background="@color/category_testStrips"
-        android:text="@string/category_testStrips"
-        android:onClick="openTestStrips"/>
+        android:text="@string/category_testStrips"/>
 
 </LinearLayout>
