@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">CDF Pilot Multiscreen</string>
+
+    <!-- Category name for the vocabulary words for collection [CHAR LIMIT=20] -->
+    <string name="category_collection">Collection</string>
+
+    <!-- Category name for aesthetics [CHAR LIMIT=20] -->
+    <string name="category_aesthetics">Aesthetics</string>
+
+    <!-- Category name for the vocabulary words for bacteria [CHAR LIMIT=20] -->
+    <string name="category_bacteria">Bacteria</string>
+
+    <!-- Category name for the vocabulary words for Test Strips [CHAR LIMIT=20] -->
+    <string name="category_testStrips">Test Strips</string>
+
+</resources>

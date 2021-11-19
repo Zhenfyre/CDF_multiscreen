@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tan_background"
+    android:orientation="vertical"
+    tools:context="CDFFlint.pilot.cdf_multiscreen.MainActivity">
+
+    <TextView
+        android:id="@+id/collection"
+        style="@style/CategoryStyle"
+        android:background="@color/category_collection"
+        android:text="@string/category_collection"
+        android:onClick="openCollection"/>
+
+    <TextView
+        android:id="@+id/aesthetics"
+        style="@style/CategoryStyle"
+        android:background="@color/category_aesthetics"
+        android:text="@string/category_aesthetics"
+        android:onClick="openAesthetics"/>
+
+    <TextView
+        android:id="@+id/bacteria"
+        style="@style/CategoryStyle"
+        android:background="@color/category_bacteria"
+        android:text="@string/category_bacteria"
+        android:onClick="openBacteria"/>
+
+    <TextView
+        android:id="@+id/testStrips"
+        style="@style/CategoryStyle"
+        android:background="@color/category_testStrips"
+        android:text="@string/category_testStrips"
+        android:onClick="openTestStrips"/>
+
+</LinearLayout>
