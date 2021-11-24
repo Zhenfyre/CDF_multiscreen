@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="CDFFlint.pilot.cdf_multiscreen">
+    package="CDFFlint.pilot.cdf_multiscreen" >
 
     <application
         android:allowBackup="true"
@@ -8,26 +8,29 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".landing"
+            android:exported="false" />
         <activity
             android:name=".TestStripsActivity"
-            android:label="@string/category_testStrips"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/category_testStrips" />
         <activity
             android:name=".BacteriaActivity"
-            android:label="@string/category_bacteria"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/category_bacteria" />
         <activity
             android:name=".AestheticsActivity"
-            android:label="@string/category_aesthetics"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/category_aesthetics" />
         <activity
             android:name=".CollectionActivity"
-            android:label="@string/category_collection"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/category_collection" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

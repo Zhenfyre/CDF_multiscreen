@@ -9,6 +9,12 @@
     tools:context="CDFFlint.pilot.cdf_multiscreen.MainActivity">
 
     <TextView
+        android:id="@+id/landing"
+        style="@style/CategoryStyle"
+        android:background="@color/category_landing"
+        android:text="@string/category_landing"/>
+
+    <TextView
         android:id="@+id/collection"
         style="@style/CategoryStyle"
         android:background="@color/category_collection"
@@ -31,5 +37,29 @@
         style="@style/CategoryStyle"
         android:background="@color/category_testStrips"
         android:text="@string/category_testStrips"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:padding="8dp"
+        android:layout_marginTop="48dp"
+        android:id="@+id/summary"
+        android:text="@string/summary"
+        android:textColor="@color/black"
+        android:visibility="gone"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="48dp"
+        android:padding="16dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="@string/submit"/>
+        <!--android:onClick="submitResults"-->
+
 
 </LinearLayout>

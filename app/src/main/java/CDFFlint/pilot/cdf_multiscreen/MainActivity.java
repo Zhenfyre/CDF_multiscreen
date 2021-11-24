@@ -15,6 +15,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+        TextView landingView = (TextView) findViewById(R.id.landing);
+        landingView.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the landing category is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link landing}
+                Intent landingIntent = new Intent(MainActivity.this, landing.class);
+                // Start the new activity
+                startActivity(landingIntent);
+            }
+        });
+
         TextView collectionView = (TextView) findViewById(R.id.collection);
         collectionView.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the collection category is clicked on.
