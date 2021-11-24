@@ -9,25 +9,62 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
+
         <activity
             android:name=".landing"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/category_landing"
+            android:parentActivityName=".MainActivity">
+        <!-- Parent activity meta-data to support 4.0 and lower -->
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity"/>
+        </activity>
+
         <activity
             android:name=".TestStripsActivity"
             android:exported="false"
-            android:label="@string/category_testStrips" />
+            android:label="@string/category_testStrips"
+            android:parentActivityName=".MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+
         <activity
             android:name=".BacteriaActivity"
             android:exported="false"
-            android:label="@string/category_bacteria" />
+            android:label="@string/category_bacteria"
+            android:parentActivityName=".MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+
         <activity
             android:name=".AestheticsActivity"
             android:exported="false"
-            android:label="@string/category_aesthetics" />
+            android:label="@string/category_aesthetics"
+            android:parentActivityName=".MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+
         <activity
             android:name=".CollectionActivity"
             android:exported="false"
-            android:label="@string/category_collection" />
+            android:label="@string/category_collection"
+            android:parentActivityName=".MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+
         <activity
             android:name=".MainActivity"
             android:exported="true" >
