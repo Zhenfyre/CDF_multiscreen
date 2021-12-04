@@ -1,107 +1,166 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".BacteriaActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:padding="8dp"
-        android:textColor="@color/black"
-        android:layout_marginTop="24dp"
-        android:text="@string/rottenEgg_smell" />
-
-    <RadioGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginStart="24dp">
-        <RadioButton
-            android:id="@+id/rottenEgg_no_radio_button"
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/no"
             android:textSize="20sp"
-            android:textColor="#575757"
-            android:layout_marginStart="8dp"/>
-        <RadioButton
-            android:id="@+id/rottenEgg_yes_radio_button"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="24dp"
+            android:text="@string/rottenEgg_smell" />
+
+        <RadioGroup
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/yes"
-            android:textSize="20sp"
-            android:textColor="#575757"
-            android:layout_marginStart="8dp"/>
-    </RadioGroup>
+            android:orientation="vertical"
+            android:layout_marginStart="24dp">
+            <RadioButton
+                android:id="@+id/rottenEgg_no_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no"
+                android:textSize="20sp"
+                android:textColor="#575757"
+                android:layout_marginStart="8dp"/>
+            <RadioButton
+                android:id="@+id/rottenEgg_yes_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes"
+                android:textSize="20sp"
+                android:textColor="#575757"
+                android:layout_marginStart="8dp"/>
+        </RadioGroup>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:padding="8dp"
-        android:textColor="@color/black"
-        android:text="@string/sediment"
-        android:layout_marginTop="24dp"/>
-
-    <RadioGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginStart="24dp">
-        <RadioButton
-            android:id="@+id/sediment_no_radio_button"
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/no"
             android:textSize="20sp"
-            android:textColor="#575757"
-            android:layout_marginStart="8dp"/>
-        <RadioButton
-            android:id="@+id/sediment_yes_radio_button"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:text="@string/sediment"
+            android:layout_marginTop="24dp"/>
+
+        <RadioGroup
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/yes"
-            android:textSize="20sp"
-            android:textColor="#575757"
-            android:layout_marginStart="8dp"/>
-    </RadioGroup>
+            android:orientation="vertical"
+            android:layout_marginStart="24dp">
+            <RadioButton
+                android:id="@+id/sediment_no_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no"
+                android:textSize="20sp"
+                android:textColor="#575757"
+                android:layout_marginStart="8dp"/>
+            <RadioButton
+                android:id="@+id/sediment_yes_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes"
+                android:textSize="20sp"
+                android:textColor="#575757"
+                android:layout_marginStart="8dp"/>
+        </RadioGroup>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:padding="8dp"
-        android:textColor="@color/black"
-        android:text="@string/feathery"
-        android:layout_marginTop="24dp"/>
-
-    <RadioGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginStart="24dp">
-        <RadioButton
-            android:id="@+id/feathery_no_radio_button"
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/no"
             android:textSize="20sp"
-            android:textColor="#575757"
-            android:layout_marginStart="8dp"/>
-        <RadioButton
-            android:id="@+id/feathery_yes_radio_button"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:text="@string/feathery"
+            android:layout_marginTop="24dp"/>
+
+        <RadioGroup
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/yes"
-            android:textSize="20sp"
-            android:textColor="#575757"
-            android:layout_marginStart="8dp"/>
-    </RadioGroup>
+            android:orientation="vertical"
+            android:layout_marginStart="24dp">
+            <RadioButton
+                android:id="@+id/feathery_no_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no"
+                android:textSize="20sp"
+                android:textColor="#575757"
+                android:layout_marginStart="8dp"/>
+            <RadioButton
+                android:id="@+id/feathery_yes_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes"
+                android:textSize="20sp"
+                android:textColor="#575757"
+                android:layout_marginStart="8dp"/>
+        </RadioGroup>
 
-</LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:padding="8dp"
+            android:layout_marginTop="24dp"
+            android:textColor="@color/black"
+            android:text="@string/bacteria" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/negative_bacteria_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/negative"
+                android:textSize="20sp"
+                android:textColor="#575757"
+                android:layout_marginStart="24dp"/>
+            <RadioButton
+                android:id="@+id/positive_bacteria_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/positive"
+                android:textSize="20sp"
+                android:textColor="#575757"
+                android:layout_marginStart="24dp"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:padding="8dp"
+            android:layout_marginTop="48dp"
+            android:id="@+id/summary"
+            android:text="@string/summary"
+            android:textColor="@color/black"
+            android:visibility="gone"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="64dp"
+            android:layout_marginBottom="48dp"
+            android:padding="16dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:text="@string/submit"
+            android:onClick="submitBacteriaResults"/>
+
+    </LinearLayout>
+
+</ScrollView>
