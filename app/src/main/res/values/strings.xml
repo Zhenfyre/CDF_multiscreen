@@ -80,4 +80,6 @@
     <string name="email_address">communitydrivenflint@gmail.com</string>
     <string name="thank_you">Lastly, click the send arrow in the top right!</string>
     <string name="category_landing">Instructions</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
